@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const { getTranscript } = require('youtube-transcript');
+const getTranscript = require('youtube-transcript').default;
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
